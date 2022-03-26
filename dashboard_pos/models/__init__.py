@@ -1,1 +1,1 @@
-from . import pos_dashboard
+from . import pos_dashboard_main

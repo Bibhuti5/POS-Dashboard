@@ -29,6 +29,5 @@ class DynamicDashboard(http.Controller):
     def tile_details(self, **kw):
         tile_id = request.env['dashboard.block'].sudo().search([('id', '=', kw.get('id'))])
         if tile_id:
-            # model_name = dict(request.env['dashboard.block'].fields_get(allfields=['model_id'])['model_id']['selection'])[tile_id.model_id]
             return {'model': tile_id.model_id.model, 'filter': tile_id.filter, 'model_name': tile_id.model_id.name}
         return False

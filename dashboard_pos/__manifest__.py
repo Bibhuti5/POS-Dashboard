@@ -15,7 +15,7 @@
         'python': ['pandas'],
     },
     'data': [
-        'views/dashboard_views.xml'
+        'views/dashboard_views_main.xml'
     ],
     'qweb': ["static/src/xml/pos_dashboard.xml"],
     'images': ['static/description/banner.png'],
